@@ -1,18 +1,10 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  build: {
-    outDir: 'build',
-    assetsDir: './',
-  },
-  server: {
-    hmr: {
-      protocol: 'ws', 
-    },
-  },
-  base: '/15may/' 
+    base: '/15may' 
 });
 
 
